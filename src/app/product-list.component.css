@@ -1,0 +1,53 @@
+.product-list {
+  float: left;
+  width: 100%;
+  margin: 20px;
+}
+
+.product-filters {
+  background-color: #f1f1f1;
+  height: 100vh;
+  width: 15%;
+  float: left;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.product-filters > span {
+  display: block;
+  font-size: 20pt;
+  margin-bottom: 25px;
+}
+
+.product-filters ul {
+  padding-left: 0;
+}
+
+.product-filters ul li {
+  list-style: none;
+  font-size: 15pt;
+  height: 60px;
+}
+
+.product-filters ul li input {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  float: left;
+  accent-color: #e80a89;
+}
+
+.products {
+  display: inline-block;
+  width: 80%;
+}
+
+.product-list .product-card {
+  float: left;
+}
+
+.product-list h1 {
+  display: block;
+  margin-left: 20%;
+  margin-bottom: 60px;
+}

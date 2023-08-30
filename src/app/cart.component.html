@@ -1,0 +1,42 @@
+<div class="cart-table">
+  <p class="total-items-count">
+    <b>Total items in cart: </b><span>{{ products.length }}</span>
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Item</th>
+        <th>Price</th>
+        <th *ngIf="products.length" style="text-align: center">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="products.length">
+      <tr *ngFor="let product of products">
+        <td><img class="product-img" src="{{ product.img }}" /></td>
+        <td>
+          <b>{{ product.name }}</b>
+        </td>
+        <td style="text-align: left">{{ product.price | currency }}</td>
+        <td>
+          <button type="button" id="remove-btn">
+            <img src="../assets/remove.svg" alt="Remove" />
+          </button>
+        </td>
+      </tr>
+    </tbody>
+    <tr class="no-tickets-row" *ngIf="!products.length">
+      <br />
+      No added tickets.
+      <br />
+      <br />
+    </tr>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th></th>
+        <th>{{ products | calculateTotalPrice | currency }}</th>
+      </tr>
+    </tfoot>
+  </table>
+</div>

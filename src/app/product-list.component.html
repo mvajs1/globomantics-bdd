@@ -1,0 +1,17 @@
+<div class="product-list">
+  <h1>Product List</h1>
+  <div class="product-filters">
+    <span>Filter by Price</span>
+    <ul>
+      <li><input type="checkbox" checked="true" /> All Price</li>
+      <li><input type="checkbox" /> $10 - $20</li>
+      <li><input type="checkbox" /> $20 - $100</li>
+      <li><input type="checkbox" /> $100 - $500</li>
+    </ul>
+  </div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-product-card [product]="product"></app-product-card>
+    </div>
+  </div>
+</div>

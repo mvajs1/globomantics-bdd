@@ -1,0 +1,33 @@
+.product-card {
+  float: left;
+  margin-right: 25px;
+  padding: 10px;
+  width: 20%;
+  background-color: #eaeaea;
+}
+
+.product-card img {
+  width: 250px;
+  height: 230px;
+  margin-bottom: 20px;
+}
+
+.product-card .product-name {
+  font-size: 15pt;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.product-card .product-price {
+  font-size: 20pt;
+  font-weight: 500;
+}
+
+.product-card button {
+  width: 100%;
+  font-size: 16pt;
+  height: 50px;
+  background-color: #130f25;
+  color: #fff;
+  font-weight: 500;
+}
